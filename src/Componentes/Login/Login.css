@@ -1,0 +1,29 @@
+.login {
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.loginTitle {
+	color: #aaa;
+	font-size: 20px;
+}
+
+.loginButton {
+	background: #111;
+	color: #fff;
+	padding: 20px;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+	font-size: 16px;
+	cursor:pointer;
+}
+
+i.fa-google {
+	margin-right: 10px
+}

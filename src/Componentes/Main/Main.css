@@ -1,0 +1,43 @@
+main {
+	margin-bottom: 250px
+}
+
+.PricesList {
+	background: #000;
+	height: 80px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	position: relative;
+}
+
+.price {
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	padding: 0 20px;
+	transition: .4s;
+	font-weight: 600;
+	border-radius: 8px;
+}
+
+.price:hover {
+	background: #303030;
+}
+
+.title {
+	color: #aaa;
+	font-weight: 300;
+}
+
+i.fa-sign-out-alt {
+	margin-right: 10px;
+}

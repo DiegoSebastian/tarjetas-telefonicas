@@ -1,0 +1,20 @@
+html{
+	position: relative;
+	min-height: 100%
+}
+
+.App-footer {
+	background: #000;
+	color: #ccc;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 30px 0;
+	margin-top: 100px;
+	box-shadow: -5px -5px 5px rgba(0,0,0,.3);
+}
+
+a {
+	color: #eee;
+	font-weight: 700;
+}

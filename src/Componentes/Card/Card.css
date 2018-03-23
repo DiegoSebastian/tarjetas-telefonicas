@@ -1,0 +1,149 @@
+.card {
+	background: #111;
+	color: #eee;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	border-radius: 8px;
+	width: 45%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+.card:onClick {
+	background: #fff;
+}
+
+.cardHeader {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
+
+.cardBody{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.data {
+	margin: 5px;
+	padding: 5px;
+}
+
+.data > .title {
+	color: #fff;
+	font-size: 18px;
+}
+
+.ticket a{
+	color: #eee;
+}
+
+.recargar {
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	transition: .4s;
+	margin: 5px auto;
+	display: inline-block;
+	width: 80%;
+	border-radius: 8px;
+
+}
+
+.recargar:hover {
+	background: #223;
+}
+
+.cardState {
+	background: #000;
+	color: #eee;
+	border: none;
+	border-radius: 8px;
+	width: 150px;
+	cursor: pointer;
+	transition: .4s;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+.cardState:hover {
+	background: #223;
+}
+
+.cardAlert {
+	width: 100px;
+	cursor: pointer;
+}
+
+.cardState:focus {
+	outline: none;
+}
+
+.iconDelete {
+	margin: 0 5px;
+}
+
+i.fa-exclamation-triangle {
+	color: yellow;
+}
+
+i.fa-times {
+	color: red;
+}
+
+i.fa-check {
+	color: green;
+}
+
+.hidden {
+	display: none;
+}
+
+.buttonDelete {
+	background: #000;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	cursor: pointer;
+	transition: .4s;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	padding: 20px;
+	width: 100%;
+}
+
+.aceptar, .cancelar {
+	background: #000;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	cursor: pointer;
+	transition: .4s;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	padding: 20px;
+	width: 50%;
+}
+
+.aceptar:hover,
+.cancelar:hover {
+	background: #223;
+}
+
+.deleteCard {
+	background: none;
+}
+
+.buttonDelete:hover {
+	background: #223;
+}
