@@ -91,14 +91,13 @@ class Main extends Component {
 
 	}
 
-
 	render() {
 		return(
 			<MemoryRouter>
 				<main>
 					<div className="PricesList">
-						<Link to="/cincoMil" className="price">5.000 Bs</Link>
-						<Link to="/diezMil" className="price">10.000 Bs</Link>
+						<Link to="/cincoMil" className="price cincoPrice">5.000 Bs</Link>
+						<Link to="/diezMil" className="price diezPrice">10.000 Bs</Link>
 					</div>
 
 					<Route exact path='/' render={() => {
@@ -113,6 +112,7 @@ class Main extends Component {
 			        			tarjeta={this.state.cincoMil}
 			        			handleNewCard={this.handleNewCard}
 			        			confirmDelete={this.confirmDeleteCard}
+			        			monto='5.000 Bs'
 			        			/>
 			        	)
 			        }} />
@@ -123,6 +123,7 @@ class Main extends Component {
 			        			tarjeta={this.state.diezMil}
 			        			handleNewCard={this.handleNewCard}
 			        			confirmDelete={this.confirmDeleteCard}
+			        			monto='10.000 Bs'
 			        			/>
 			        	)
 			        }} />

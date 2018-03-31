@@ -72,7 +72,7 @@
 	color: #eee;
 	border: none;
 	border-radius: 8px;
-	width: 150px;
+	width: 20%;
 	cursor: pointer;
 	transition: .4s;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
@@ -83,7 +83,7 @@
 }
 
 .cardAlert {
-	width: 100px;
+	width: 15%;
 	cursor: pointer;
 }
 
@@ -146,4 +146,10 @@ i.fa-check {
 
 .buttonDelete:hover {
 	background: #223;
+}
+
+@media screen and(max-width: 800px) {
+	body {
+		border: 1px solid red;
+	}
 }

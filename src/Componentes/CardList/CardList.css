@@ -13,6 +13,10 @@
 
 }
 
+.titleCards {
+	color: #444;
+}
+
 .tarjetas {
 	-ms-align-items: center;
 	align-items: center;

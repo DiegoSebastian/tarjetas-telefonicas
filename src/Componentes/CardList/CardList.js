@@ -22,7 +22,8 @@ class CardList extends Component {
             	        <button className="send" type="submit">Enviar</button>
             	    </div>
             	</form>
-				<h2 className="title">Estas son sus tarjetas</h2>
+				<h2 className="titleCards">Estas son sus tarjetas de {this.props.monto}.</h2>
+				<h3 className="titleCards"> Tiene: {this.props.tarjeta.length}</h3>
 				<div className="tarjetas">
 				{
 					this.props.tarjeta.map((tarjeta) => {
@@ -34,7 +35,7 @@ class CardList extends Component {
 								cardNumber={this.props.tarjeta.length}
 								/>
 						)
-					}).reverse()}
+					})}
 				</div>
 			</div>
 		)

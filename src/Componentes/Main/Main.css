@@ -28,6 +28,9 @@ main {
 	font-weight: 600;
 	border-radius: 8px;
 }
+.presionado {
+	background: #303030;
+}
 
 .price:hover {
 	background: #303030;

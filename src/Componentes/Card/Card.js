@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './Card.css'
 import swal from 'sweetalert'
-import SweetAlert from 'sweetalert-react';
 
 class Card extends Component {
 	constructor(props) {
 		super(props)
 
 		this.state = {
-			used: false,
+			used: this.props.datos.used,
 			alert: false,
 			cardNumber: this.props.cardNumber,
 			show: false,
@@ -42,7 +41,7 @@ class Card extends Component {
 	}
 
 	confirmChangeAlert() {
-		if(this.state.alert == false) {
+		if(this.state.alert === false) {
 			swal({
 				title: '¿Está seguro que deséa poner la tarjeta en estado de reclamo?',
 				icon: 'warning',
@@ -119,8 +118,6 @@ class Card extends Component {
 		return(
 			<div className="card">
 				<div className="cardHeader">
-					<button className="cardState" onClick={this.confirmChangeState}>Estado: {(this.state.used)?<span>Usada <i className="fas fa-times"></i></span> : <span>Disponible <i className="fas fa-check"></i></span>}</button>
-					<button className="cardAlert cardState" onClick={this.confirmChangeAlert}>Reclamo: {(this.state.alert)?<span>Si <i className="fas fa-exclamation-triangle"></i></span> : <span>No</span>}</button>
 					<h3 className="cardTitle">Tarjeta de {this.props.datos.monto} bs</h3>
 					<p>Fecha: {this.props.datos.date}</p>
 				</div>
@@ -133,11 +130,6 @@ class Card extends Component {
 					<div className="serial data">
 						<h4 className="title">Serial:</h4>
 						<span>{this.props.datos.serialCode}</span>
-					</div>
-					
-					<div className="phone data">
-						<h4 className="title">Tarjeta número:</h4>
-						<span>{this.state.cardNumber}</span>
 					</div>
 					
 					<div className="ticket data">
