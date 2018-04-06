@@ -87,7 +87,8 @@ class Main extends Component {
 
 		swal("La tarjeta se ha añadido correctamente", {
 			 icon: "success",
-		});
+		})
+		ev.target.reset()
 
 	}
 
