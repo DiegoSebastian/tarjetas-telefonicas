@@ -39,6 +39,10 @@ form {
 	border-radius: 8px;
 }
 
+.CardList > form {
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
 input {
 	margin: 10px 0;
 	height: 20px;

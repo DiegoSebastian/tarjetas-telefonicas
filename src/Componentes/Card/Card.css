@@ -38,12 +38,15 @@
 
 .data {
 	margin: 5px;
-	padding: 5px;
+	display: inline-block;
 }
 
 .data > .title {
+	padding: 0 15px;
 	color: #fff;
 	font-size: 18px;
+	display: inline-block;
+
 }
 
 .ticket a{
